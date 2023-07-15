@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <script>
+            function msg()
+            {
+                var n=document.getElementsByName("gender");
+                document.write("total:"+n.length);
+            }
+        </script>
+        <form>
+            Male:<input type="radio"name="gender"value="male">
+            Female:<input type="radio"name="gender"value="female">
+            <input type="button"onclick="msg()"value="submit">
+        </form>
+        </body>
+</html>
+<hr>
+<html>
+    <body>
+        <tabel border="2px">
+            <tr>
+                <td id="result"></td>
+                <td id="r1"></td>
+            </tr>
+        </tabel>
+        <input type="button" value="getvalue" onclick="showmsg()">
+        <input type="text" id="t1">
+        <script>
+            function showmsg()
+            {
+                var a=document.getElementById("t1").value;
+                document.getElementById("result").innerHTML
+                = a;
+            }
+
+        </script>
+    </body>
+</html>
